@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Stopwatch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa-solid fa-stopwatch"></i> Stopwatch</h1>
+    <div id="display">00:00:00</div>
+    <div class="buttons">
+      <button id="startPauseBtn" onclick="toggleStartPause()"><i class="fa-solid fa-play"></i> Start</button>
+      <button onclick="resetStopwatch()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+      <button onclick="recordLap()"><i class="fa-solid fa-flag"></i> Lap</button>
+      <button onclick="clearLaps()"><i class="fa-solid fa-trash"></i> Clear Laps</button>
+    </div>
+    <ul id="laps"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
